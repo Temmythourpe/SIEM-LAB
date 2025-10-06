@@ -19,9 +19,9 @@ Python         - Automation scripting environment
 
 # Network Configuration
 ## VM            - IP Adress  - Role               - Network
-Windows Server   10.1.10.x    Domain Controller    Host-only
+Windows Server   - 10.1.10.x  - Domain Controller  -  Host-only
 
-Windows 11        10.1.10.x    Domain Workstation   Host-only
+Windows 11       - 10.1.10.x  - Domain Workstation - Host-only
 
 Subnet: 255.x.x.x
 
