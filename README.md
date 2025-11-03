@@ -72,6 +72,7 @@ This allowed internal communication between the two VMs but no internet access f
 ### Solution
 I configured Dual Adapters: Adapter 1 and 2, then attached the Host-only Adapter
 Purpose: Internal lab network (10.1.10.x) and Adapter 2 attached to NAT, respectively.
+
 <img width="768" height="470" alt="Screenshot 2025-11-03 151559" src="https://github.com/user-attachments/assets/7f1a982d-b9c4-4e96-b8cf-a98b8012912d" />
 <img width="763" height="462" alt="Screenshot 2025-11-03 151543" src="https://github.com/user-attachments/assets/9da14290-bb32-40f1-9c22-3e64f6b760dd" />
 
