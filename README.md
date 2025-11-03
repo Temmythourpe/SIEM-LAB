@@ -43,6 +43,8 @@ Each VM uses dual network adapters:
 5. Wireshark scenarios (capture, analyze)  
 6. Python scripts to automate routine tasks  
 7. Final report + evidence + how-to guide for recruiters
+<img width="945" height="831" alt="Screenshot 2025-11-03 151324" src="https://github.com/user-attachments/assets/1ba63096-1aad-4750-b3b7-8aa74fbbf6ba" />
+
 
 # Deliverables
 - Step-by-step docs in /docs
@@ -79,6 +81,8 @@ Both VMs (Windows Server and Windows 11) can now:
 1. Communicate within the lab network (Host-only)
 2. Access the internet via NAT
 3. Perform AD-related downloads, Windows updates, and install security tools such as Splunk
+<img width="768" height="470" alt="Screenshot 2025-11-03 151559" src="https://github.com/user-attachments/assets/7f1a982d-b9c4-4e96-b8cf-a98b8012912d" />
+<img width="763" height="462" alt="Screenshot 2025-11-03 151543" src="https://github.com/user-attachments/assets/9da14290-bb32-40f1-9c22-3e64f6b760dd" />
 
 ## 2. Splunk Web
 Splunk Web returned “Oops. Page not found!” when adding a local event log input on Windows Server.
