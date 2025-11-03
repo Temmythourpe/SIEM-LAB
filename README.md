@@ -62,19 +62,28 @@ Each VM uses dual network adapters:
 
 
 
-# Networking Challenge & Solution
+# Challenge & Solution
+## 1. Networking
 While setting up the Active Directory lab, my virtual machines (Windows Server and Windows 11) were configured with static IPs on a Host-only network (10.1.10.x subnet).
-This allowed internal communication between both VMs, but no internet access for software updates or tool downloads.
+This allowed internal communication between the two VMs but no internet access for software updates or tool downloads.
 
-## Solution
+### Solution
 I configured Dual Adapters: Adapter 1 and 2, then attached the Host-only Adapter
 Purpose: Internal lab network (10.1.10.x) and Adapter 2 attached to NAT, respectively.
 
-I verified connectivity by pinging my server and client IP addresses to confirm they are communicating with one another, and pinged 8.8.8.8 and google.com to confirm DNS and internet access.
+I verified connectivity by pinging my server and client IP addresses to confirm they are communicating, and by pinging 8.8.8.8 and google.com to confirm DNS and internet access.
 
-## Outcome
+### Outcome
 Both VMs (Windows Server and Windows 11) can now:
 
 1. Communicate within the lab network (Host-only)
 2. Access the internet via NAT
 3. Perform AD-related downloads, Windows updates, and install security tools such as Splunk
+
+## 2. Splunk Web
+Splunk Web returned “Oops. Page not found!” when adding a local event log input on Windows Server.
+Splunk Web failed to load the local event log configuration page, likely due to permissions or UI rendering issues.
+
+### Solution
+Configured Windows Event Logs manually by editing inputs.conf under
+C:\Program Files\Splunk\etc\system\local\, then restarted the Splunk service to activate the inputs.
