@@ -72,8 +72,10 @@ This allowed internal communication between the two VMs but no internet access f
 ### Solution
 I configured Dual Adapters: Adapter 1 and 2, then attached the Host-only Adapter
 Purpose: Internal lab network (10.1.10.x) and Adapter 2 attached to NAT, respectively.
+<img width="768" height="470" alt="Screenshot 2025-11-03 151559" src="https://github.com/user-attachments/assets/7f1a982d-b9c4-4e96-b8cf-a98b8012912d" />
+<img width="763" height="462" alt="Screenshot 2025-11-03 151543" src="https://github.com/user-attachments/assets/9da14290-bb32-40f1-9c22-3e64f6b760dd" />
 
-I verified connectivity by pinging my server and client IP addresses to confirm they are communicating, and by pinging 8.8.8.8 and google.com to confirm DNS and internet access.
+I verified connectivity by pinging my server and client IP addresses to confirm they are communicating, and by pinging 8.8.8.8 and google.com to confirm DNS and internet resolution.
 
 ### Outcome
 Both VMs (Windows Server and Windows 11) can now:
@@ -81,8 +83,6 @@ Both VMs (Windows Server and Windows 11) can now:
 1. Communicate within the lab network (Host-only)
 2. Access the internet via NAT
 3. Perform AD-related downloads, Windows updates, and install security tools such as Splunk
-<img width="768" height="470" alt="Screenshot 2025-11-03 151559" src="https://github.com/user-attachments/assets/7f1a982d-b9c4-4e96-b8cf-a98b8012912d" />
-<img width="763" height="462" alt="Screenshot 2025-11-03 151543" src="https://github.com/user-attachments/assets/9da14290-bb32-40f1-9c22-3e64f6b760dd" />
 
 ## 2. Splunk Web
 Splunk Web returned “Oops. Page not found!” when adding a local event log input on Windows Server.
