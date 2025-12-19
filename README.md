@@ -6,16 +6,12 @@
 A hands-on lab to build:
 - Active Directory setup for centralized authentication
 - Splunk SIEM deployment for log collection and threat analysis
-- Wireshark for traffic inspection
-- Python automation for scripting and efficiency
 
 # Lab Architecture
 ## Component    - Description
 Windows Server - Domain Controller with Active Directory, DNS, and DHCP
 Windows 11     - Domain-joined workstation
 Splunk         - SIEM platform for log ingestion and analysis
-Wireshark      - Network packet capture and analysis tool
-Python         - Automation scripting environment
 
 # Network Configuration
 ## VM            - IP Address  - Role               - Network
@@ -33,36 +29,7 @@ Each VM uses dual network adapters:
 - Adapter 1: Host-only (for internal lab communication)
 - Adapter 2: NAT (for internet access)
 
-
-
-# Milestones
-1. Repo + README (this step)  - completed
-2. Build AD DC VM, create test users/groups - completed
-3. Deploy Splunk (indexer + universal forwarder) and ingest AD logs - completed
-4. Create detection searches & dashboards  
-5. Wireshark scenarios (capture, analyze)  
-6. Python scripts to automate routine tasks  
-7. Final report + evidence + how-to guide for recruiters
 <img width="945" height="831" alt="Screenshot 2025-11-03 151324" src="https://github.com/user-attachments/assets/1ba63096-1aad-4750-b3b7-8aa74fbbf6ba" />
-
-
-# Deliverables
-- Step-by-step docs in /docs
-- Screenshots/exports of Splunk dashboards
-- Capture files (.pcap) in /docs/captures (or links)
-- Python scripts in /scripts
-- A single PDF lab report
-
-
-
-
-
-
-
-
-
-
-
 
 # Challenge & Solution
 ## 1. Networking
